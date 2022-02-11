@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&family=Quintessential&display=swap");
+$primary: hsla(348, 100%, 55%, 0.65);
+$secondary: hsla(230, 96%, 62%, 0.65);
+$white: #fff;
+$blue: #022cdd;
+$pink: #eb1c79;
+$green: #55fa09;
+
+@mixin controlBg {
+  background: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+}
+
+@mixin flexDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, $primary, $secondary),
+    url(assets/images/Mixer.png) no-repeat center / cover;
+  cursor: url("./assets/images/cursor.png"), auto;
+  font-family: "Mochiy Pop P One", sans-serif;
+  @include flexDisplay();
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  
+
+  & h1 {
+    color: $white;
+    font-size: 4rem;
+    letter-spacing: 0.2rem;
+    font-family: "Comforter", cursive;
+  }
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 2px;
+  right: 20px;
+  opacity: 0.5;
+
+  & h2 {
+    color: $white;
+    letter-spacing: 0.1rem;
+    font-family: "Comforter", cursive;
+  }
+}
+
+.pads_container {
+  position: relative;
+  top:20px;
+  left: -80px;
+  width: 1050px;
+  height: 500px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  & .three_dots {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 100px;
+    height: 30px;
+    @include flexDisplay();
+
+    & span {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      background: $green;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: 3px solid $white;
+    }
+  }
+
+  & .display_bar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    width: 200px;
+    height: 30px;
+    background: $white;
+    border-radius: 15px;
+    @include flexDisplay();
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: inset 4px 4px 2px rgba(0, 0, 0, 0.07),
+      inset -3px 3px 0 rgba(0, 0, 0, 0.07), inset 3px -3px 0 rgba(0, 0, 0, 0.07);
+  }
+
+  & .drumsContainer {
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 100%;
+    @include flexDisplay();
+    padding: 50px 30px;
+    flex-wrap: wrap;
+
+    & .drum_pad {
+      position: relative;
+      width: 100px;
+      height: 80px;
+      margin-right: 10px;
+      border-radius: 5px;
+      @include flexDisplay();
+      box-sizing: border-box;
+      cursor: url("./assets/images/click.png"), auto;
+      font-weight: 1000;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7),
+        inset -2px -2px 10px rgba(0, 0, 0, 0.7);
+    }
+  }
+}
+
+.controls {
+  position: absolute;
+  right: -175px;
+  bottom: 30px;
+  width: 100px;
+  height: 500px;
+  @include flexDisplay();
+
+  & .slide_control {
+    position: absolute;
+    width: 60px;
+    height: 350px;
+    top: 30px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include controlBg();
+
+    & .volume_control {
+      position: absolute;
+      width: 300px;
+      height: 20px;
+      -webkit-appearance: none;
+      background: transparent;
+      outline: none;
+      border-radius: 15px;
+      transform: rotate(-90deg);
+      z-index: 4;
+    
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 40px;
+        height: 24px;
+        border-radius: 10px;
+        background: $blue;
+        cursor: url("./assets/images/click.png"), auto;
+        border: 3px solid #333;
+      }
+    }
+
+    & .value_details {
+      position: absolute;
+      width: 60px;
+      top: -70px;
+      color: #000;
+      @include controlBg();
+      padding: 15px;
+      border-radius: 7px;
+      font-weight: 1000;
+      @include flexDisplay();
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        width: 20px;
+        height: 20px;
+        @include controlBg();
+        transform: rotate(45deg);
+        z-index: -1;
+      }
+    }
+
+    & .progress {
+      position: absolute;
+      bottom: 25px;
+      width: 20px;
+      height: 299px;
+      background: $white;
+      border-radius: 15px;
+      box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2),
+        inset -3px -3px 6px rgba(255, 255, 255, 0.5),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 2px 10px 5px rgba(0, 0, 0, 0.05);
+      z-index: 3;
+
+      & .progress_bar {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-radius: 15px;
+        background: linear-gradient(25deg, $pink, $blue);
+      }
+    }
+  }
+
+  & .toggle {
+    position: absolute;
+    bottom: 25px;
+    width: 93px;
+    height: 47px;
+    border-radius: 34px;
+    @include controlBg();
+    box-shadow: inset 0 -8px 60px rgba(0, 0, 0, 0.1),
+      inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    border: 2px solid #efefef;
+
+    & .indicator {
+      position: absolute;
+      top: 0;
+      width: 43px;
+      height: 43px;
+      background: $white;
+      border-radius: 50%;
+      transform: scale(0.9);
+      box-shadow: 0 px 40px rgba(0, 0, 0, 0.5),
+        inset 0 4px 4px rgba(255, 255, 255, 0.5),
+        inset 0 -4px 4px rgba(255, 255, 255, 0.5);
+      cursor: url("./assets/images/click.png"), auto;
+      @include flexDisplay();
+      transition: 0.5s;
+      & .toggle_icon {
+        color: $blue;
+        transform: scale(1);
+        animation: big 2s linear infinite;
+      }
+
+      @keyframes big {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1265px) { 
+  .pads_container {
+    transform: scale(0.8);
+  }
+}
+
+
+@media screen and (max-width: 1050px){
+  .pads_container{
+    transform: scale(0.7) ;
+  }
+}
+
+
+@media screen and (max-width : 950px){
+  .pads_container{
+    transform: scale(0.65);
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width : 810px){
+  .header h1{
+    font-size: 3rem;
+  }
+ 
+  .pads_container {
+    left: 0;
+    transform: scale(0.6) translateY(-90px);
+  }
+
+  .controls {
+    right: 50%;
+    transform: rotate(90deg) scale(1.5) translateX(260px);
+
+    & .slide_control{
+      top: -60px;
+
+      & .volume_control::-webkit-slider-thumb{
+        height: 26px;
+      }
+
+      & .value_details{
+        transform: rotate(-90deg) translateX(8px);
+        font-size: 1rem;
+  
+        &::before{
+          left: -5px;
+          bottom: 15px;
+        }
+      }
+    }
+
+    & .toggle {
+      position: relative;
+      transform: rotate(-90deg)  scale(1.15) translateX(-170px);
+    }
+
+  } 
+}
+
+@media screen and (max-width : 650px){
+  .pads_container{
+    transform: scale(0.45) translateY(-68px);
+  }
+}

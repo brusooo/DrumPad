@@ -1,0 +1,161 @@
+{
+    "keys" : [
+        {
+            "keyCode": 81,
+            "keyTrigger": "Q",
+            "id": "Bamboo",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/Q.wav"
+        },
+        {
+            "keyCode": 87,
+            "keyTrigger": "W",
+            "id": "Bottle",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/W.wav"
+        },
+        {
+            "keyCode": 69,
+            "keyTrigger": "E",
+            "id": "Clap",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/E.wav"
+        },
+        {
+            "keyCode": 82,
+            "keyTrigger": "R",
+            "id": "Doumbeck",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/R.wav"
+        },
+        {
+            "keyCode": 84,
+            "keyTrigger": "T",
+            "id": "Claves",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/T.wav"
+        },
+        {
+            "keyCode": 89,
+            "keyTrigger": "Y",
+            "id": "Cowbell",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/Y.wav"
+        },
+        {
+            "keyCode": 85,
+            "keyTrigger": "U",
+            "id": "Electro Tom",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/U.wav"
+        },
+        {
+            "keyCode": 73,
+            "keyTrigger": "I",
+            "id": "Electronic Kick",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/I.wav"
+        },
+        {
+            "keyCode": 79,
+            "keyTrigger": "O",
+            "id": "Ensoniq",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/O.wav"
+        },
+        {
+            "keyCode": 80,
+            "keyTrigger": "P",
+            "id": "Guiro",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/P.wav"
+        },
+        {
+            "keyCode": 65,
+            "keyTrigger": "A",
+            "id": "High Agogo",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/A.wav"
+        },
+        {
+            "keyCode": 83,
+            "keyTrigger": "S",
+            "id": "Kawai",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/S.wav"
+        },
+        {
+            "keyCode": 68,
+            "keyTrigger": "D",
+            "id": "Snor",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/D.wav"
+        },
+        {
+            "keyCode": 70,
+            "keyTrigger": "F",
+            "id": "Kick Drum",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/F.wav"
+        },
+        {
+            "keyCode": 71,
+            "keyTrigger": "G",
+            "id": "Klank",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/G.wav"
+        },
+        {
+            "keyCode": 72,
+            "keyTrigger": "H",
+            "id": "Kick Snare",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/H.wav"
+        },
+        
+        {
+            "keyCode": 74,
+            "keyTrigger": "J",
+            "id": "Korg",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/J.wav"
+        },
+        {
+            "keyCode": 75,
+            "keyTrigger": "K",
+            "id": "Laser Kick",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/K.wav"
+        },
+        {
+            "keyCode": 76,
+            "keyTrigger": "L",
+            "id": "Low Agogo",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/L.wav"
+        },
+        {
+            "keyCode": 90,
+            "keyTrigger": "Z",
+            "id": "Metal Hit",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/Z.wav"
+        },
+        {
+            "keyCode": 88,
+            "keyTrigger": "X",
+            "id": "Pulse Kick",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/X.wav"
+        },
+        {
+            "keyCode": 67,
+            "keyTrigger": "C",
+            "id": "Rim",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/C.wav"
+        },
+        {
+            "keyCode": 86,
+            "keyTrigger": "V",
+            "id": "Roland Rimshot",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/V.wav"
+        },
+        {
+            "keyCode": 66,
+            "keyTrigger": "B",
+            "id": "Brusooo",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/B.wav"
+        },
+        {
+            "keyCode": 78,
+            "keyTrigger": "N",
+            "id": "Side Stick",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/N.wav"
+        },
+        {
+            "keyCode": 77,
+            "keyTrigger": "M",
+            "id": "Pika",
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/M.wav"
+        }
+    ]
+}
