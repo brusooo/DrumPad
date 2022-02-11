@@ -114,6 +114,12 @@ class Container extends Component {
       
     return (
       <div className="pads_container">
+        <div className="display_bar">{this.state.display.toUpperCase()}</div>
+        <div className="three_dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <DrumsContainer
           ClipVolume={this.state.soundVolume}
           Containerpower={this.state.power}
@@ -121,12 +127,7 @@ class Container extends Component {
           UpdateDisplay={this.displayClipName}
         />
 
-        <div className="display_bar">{this.state.display.toUpperCase()}</div>
-        <div className="three_dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        
         <div className="controls">
           <div className="slide_control" onMouseEnter={this.showVol}
             onMouseLeave={this.hideVol}>
