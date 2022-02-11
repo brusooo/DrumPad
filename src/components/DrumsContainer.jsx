@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import DrumPad from './DrumPad';
 
 class DrumsContainer extends Component {
-    constructor(props) {
-        super(props)
-    }
 
     render() {
         let drumsContainer;

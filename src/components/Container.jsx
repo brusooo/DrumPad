@@ -50,6 +50,8 @@ class Container extends Component {
       case 39:
         this.toggleIndicator();
         break;
+      default:
+        break;
     }
   }
 
