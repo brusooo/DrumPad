@@ -328,3 +328,12 @@ body {
     transform: scale(0.45) translateY(-68px);
   }
 }
+
+@media screen and (max-width : 450px){
+  .header h1{
+    font-size: 2rem;
+  }
+  .pads_container{
+    transform: scale(0.3);
+  }
+}
