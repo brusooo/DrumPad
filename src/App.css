@@ -30,6 +30,7 @@ body {
 
 .header {
   position: relative;
+  top: 10px;
   text-align: center;
 }
 
@@ -371,13 +372,20 @@ body {
   }
   .pads_container {
     left: 0;
-    -webkit-transform: scale(0.6) translateY(-90px);
-            transform: scale(0.6) translateY(-90px);
+  }
+  .pads_container .three_dots span {
+    width: 27px;
+    height: 27px;
+  }
+  .pads_container .display_bar {
+    width: 240px;
+    height: 50px;
+    font-size: 1.3rem;
   }
   .controls {
     right: 50%;
-    -webkit-transform: rotate(90deg) scale(1.5) translateX(260px);
-            transform: rotate(90deg) scale(1.5) translateX(260px);
+    -webkit-transform: rotate(90deg) scale(1.4) translateX(280px);
+            transform: rotate(90deg) scale(1.4) translateX(280px);
   }
   .controls .slide_control {
     top: -60px;
@@ -413,18 +421,19 @@ body {
     font-size: 2.3rem;
   }
   .pads_container {
-    -webkit-transform: scale(0.32);
-            transform: scale(0.32);
+    top: -75px;
+    width: 850px;
+    height: 800px;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 400px) {
   .header h1 {
     font-size: 1.8rem;
   }
   .pads_container {
-    -webkit-transform: scale(0.25);
-            transform: scale(0.25);
+    -webkit-transform: scale(0.37) translateY(-150px);
+            transform: scale(0.37) translateY(-150px);
   }
 }
 /*# sourceMappingURL=App.css.map */
