@@ -436,4 +436,19 @@ body {
             transform: scale(0.37) translateY(-150px);
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .pads_container .three_dots span {
+    border: 3px solid #fff;
+  }
+  .pads_container .display_bar {
+    background: #fff;
+  }
+  .controls .slide_control .progress {
+    background: #fff;
+  }
+  .controls .toggle .indicator {
+    background: #fff;
+  }
+}
 /*# sourceMappingURL=App.css.map */

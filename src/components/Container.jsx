@@ -63,7 +63,6 @@ class Container extends Component {
         height: event.target.value * 3
       }
     });
-
   }
   showVol = () => {
     this.setState({
