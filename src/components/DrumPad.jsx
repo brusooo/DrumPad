@@ -55,12 +55,7 @@ class DrumPad extends Component {
             });
         } else {
             this.setState({
-                padStyle: {
-                    height: 77,
-                    marginTop: 13,
-                    background: blue,
-                    color : white
-                }
+                padStyle: activeStyle
             });
         }
     }
