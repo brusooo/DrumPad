@@ -63,9 +63,11 @@ class DrumPad extends Component {
     playSound = () => {
         const sound = document.getElementById(this.props.keyTrigger);
         sound.currentTime = 0;
-        sound.volume = this.props.volume
+        this.props.power === false ? sound.volume = 0 : sound.volume = this.props.volume;
         sound.play();
         this.activatePad();
+
+
         setTimeout(() => this.activatePad(), 100);
         this.props.updateDisplay(this.props.clipId);
     }
