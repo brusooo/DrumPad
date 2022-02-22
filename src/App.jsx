@@ -4,26 +4,25 @@ import './App.css'
 import Container from './components/Container'
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [fade, setFade] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
-      setLoading(true);
+      setFade(true);
     }, 3000)
   })
+
+
   return (
     <div>
-      {!loading ?
 
-        <div className="loader">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+      <div className={`loader ${fade ? 'fadeOut' : 'noFade'} `}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
 
-        :
-
-        <div>
+      <div>
           <div className="header">
             <h1>Let's Rock the World</h1>
           </div>
@@ -32,10 +31,8 @@ const App = () => {
             <h2>Brusooo</h2>
           </div>
         </div>
-      }
-    </div>
 
+    </div>
   )
 }
-
 export default App
