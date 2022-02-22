@@ -64,7 +64,7 @@
             "keyCode": 65,
             "keyTrigger": "A",
             "id": "High Agogo",
-            "src" : "./assets/A.wav"
+            "src" : "https://raw.githubusercontent.com/brusooo/ReactDrumsProjectMusicList/master/music/A.wav"
         },
         {
             "keyCode": 83,
