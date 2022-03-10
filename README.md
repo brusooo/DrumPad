@@ -1,2 +1,5 @@
 ## About 
-This is my Very First Project on React,  I have done during my Learning Process. 
+A Drum Machine made by using react for Freecode Camp front-end-development-libraries-projects
+
+# View the result Here
+[Watch Live](https://letsrocktheworld.netlify.app)
