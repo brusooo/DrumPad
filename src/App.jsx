@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setFade(true);
-    }, 3000)
+    }, 6000)
   })
 
 
